@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/freelancer2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Grid</a>
+                        <a href="index_list.html">List</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio" data-toggle="modal" data-target="#myModal">Info</a>
@@ -65,37 +65,50 @@
         <div class="container">
             <div class="row">
               <div class="data-container">
-    <div class="list-group">
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-puzzle-piece"></span> &nbsp; Math 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-sort-alpha-asc"></span> &nbsp; English 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-flask"></span> &nbsp; Chemistry 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-heartbeat"></span> &nbsp; Biology 
-        </a>
-        <a href="next_list.html" class="list-group-item active">
-            <span class="fa fa-desktop active"></span> &nbsp; Computer 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-cogs"></span> &nbsp; Physics 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-leaf"></span> &nbsp; Agriculture 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-paint-brush"></span> &nbsp; Art 
-        </a>
-        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
-            <span class="fa fa-line-chart"></span> &nbsp; Management 
-        </a>
-    </div>
-</div>
+
+              <div class="row">
+                    <div class="list-group grid">
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-puzzle-piece"></span>Math 
+                        </a>
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-sort-alpha-asc"></span>English 
+                        </a>
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-flask"></span>Chemistry 
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-group grid">
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-heartbeat"></span>Biology 
+                        </a>
+                        <a href="next_grid.html" class="list-group-item active">
+                            <span class="fa fa-desktop active"></span>Computer 
+                        </a>
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-cogs"></span>Physics 
+                        </a>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-group grid">
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-leaf"></span>Agriculture 
+                        </a>
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-paint-brush"></span>Art 
+                        </a>
+                        <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-line-chart"></span>Management 
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
 
@@ -158,6 +171,11 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+    <script type="text/javascript">
+        $("a.list-group-item").fitText(0.7, { minFontSize: '14px', maxFontSize: '40px' });
+        $("span.fa").fitText(0.25, { minFontSize: '40px', maxFontSize: '480px' });
+    </script>
 
 </body>
 
