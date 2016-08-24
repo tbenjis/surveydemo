@@ -106,10 +106,7 @@
                         <span class="fa fa-camera"></span>Webcam 
                     </a>
                 </div>
-                <div class="list-group grid">
-                    <a href="#" class="list-group-item active">
-                        <span class="fa fa-phone active"></span>Mobile 
-                    </a>
+                <div id="grid-content" class="list-group grid">
                     <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
                         <span class="fa fa-pencil"></span>Light Pen 
                     </a>
@@ -167,11 +164,7 @@
           <h4 class="modal-title">Instructions</h4>
         </div>
         <div class="modal-body">
-          <p>Thank you for your interest in our survey. To participate carry out the following:</p>
-
-<p>1. Click on "Computer" on one of the two screens below.</p>
-
-<p>2. Next select "Mobile" from the list or grid of items for the survey to open.</p>
+<p>Select "Mobile" from the list or grid of items for the survey to open.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -194,10 +187,39 @@
     <script src="js/freelancer.min.js"></script>
             <script src="js/jquery.fittext.js"></script>
     <script type="text/javascript">
+
+
+        var someDiv = document.getElementById("grid-content");
+
+        //for survey grid
+            var ran = Math.floor((Math.random() * 4) + 1);
+            if (ran == 1){
+                someDiv.innerHTML ='<a href="https://goo.gl/forms/u2DsTdeQOqna9xCq2" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+            }
+            if (ran == 2){
+                someDiv.innerHTML ='<a href="https://goo.gl/forms/hP9pm1ZrGOISkSlB2" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+            }
+            if (ran == 3){
+                someDiv.innerHTML ='<a href="https://goo.gl/forms/lKI57BlYBGzL01a43" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+            }
+            if (ran == 4){
+                someDiv.innerHTML ='<a href="https://goo.gl/forms/RisTfV3OwR3IUq8n1" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>' + someDiv.innerHTML; 
+            }
+
         $("a.list-group-item").fitText(0.7, { minFontSize: '14px', maxFontSize: '40px' });
         $("span.fa").fitText(0.25, { minFontSize: '40px', maxFontSize: '480px' });
-    </script>
 
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83023065-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 
 </html>

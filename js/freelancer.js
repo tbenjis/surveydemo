@@ -50,3 +50,4 @@ if (ran < 5){
  document.getElementById("menu-content").innerHTML='<a href="index_list.html" class="list-group-item" >List <img src="img/list.png" class="img_view" alt="List"> </a> <a href="index_grid.html" class="list-group-item" >Grid <img src="img/grid.png" class="img_view" alt="Grid"></a> '; 
 
 }
+

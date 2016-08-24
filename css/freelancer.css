@@ -537,4 +537,20 @@ a.list-group-item{
   font-size: 20px;
 }
 
+.list-content .list-group-item:first-child {
+    border-top-left-radius: 0px; 
+     border-top-right-radius: 0px 
+}
+
+.list-content .list-group-item:last-child {
+     margin-bottom: 0; 
+     border-bottom-right-radius: 0px; 
+    border-bottom-left-radius: 0px;
+    border-bottom: 0; 
+}
+
+.data-container .list-content .fa {
+    width: 40px;
+}
+
 
