@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Survey Test</a>
+                <span id="homelink"></span>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -186,6 +186,7 @@
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
             <script src="js/jquery.fittext.js"></script>
+            <script src="js/mturk.js"></script>
     <script type="text/javascript">
 
 
@@ -194,16 +195,16 @@
         //for survey grid
             var ran = Math.floor((Math.random() * 4) + 1);
             if (ran == 1){
-                someDiv.innerHTML ='<a href="https://goo.gl/forms/30iaibkKqBNxG8Lf2" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+                someDiv.innerHTML ='<a href="https://docs.google.com/forms/d/e/1FAIpQLSdve5c7vZzA6JIN41zJXsB6BSLMnLjYnnF1Zs8VKhxhLyOZVA/viewform?entry.1435300836='+assign+'&entry.400424754='+hit+'&entry.977227714='+worker+'" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
             }
             if (ran == 2){
-                someDiv.innerHTML ='<a href="https://goo.gl/forms/SXihvAtKJEqW7F4t1" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+                someDiv.innerHTML ='<a href="https://docs.google.com/forms/d/e/1FAIpQLSd73gLtcXnUxHvRQ07wyHvS21S0z7Uox-43m59c6CfpSPJuLQ/viewform?entry.1286411159='+assign+'&entry.1259106821='+hit+'&entry.377487193='+worker+'" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
             }
             if (ran == 3){
-                someDiv.innerHTML ='<a href="https://goo.gl/forms/iKkDZCn6Y1w4GUaA3" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
+                someDiv.innerHTML ='<a href="https://docs.google.com/forms/d/e/1FAIpQLSflY78nDKgn7mBMSMVailTmD_pBskQkBNjVMNWi5C80bwk2GA/viewform?entry.1662824869='+assign+'&entry.289571509='+hit+'&entry.1104351981='+worker+'" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>'+ someDiv.innerHTML;
             }
             if (ran == 4){
-                someDiv.innerHTML ='<a href="https://goo.gl/forms/NQqnOdKB9hNA7sX23" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>' + someDiv.innerHTML; 
+                someDiv.innerHTML ='<a href="https://docs.google.com/forms/d/e/1FAIpQLSeOV44N1IYiS64uMyD8OFc_xFc-bD3Jbg56FHXuk2jeZkAMYw/viewform?entry.152417443='+assign+'&entry.1050650841='+hit+'&entry.655870366='+worker+'" class="list-group-item"><span class="fa fa-phone"></span>Mobile </a>' + someDiv.innerHTML; 
             }
 
         $("a.list-group-item").fitText(0.7, { minFontSize: '14px', maxFontSize: '40px' });

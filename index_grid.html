@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Survey Test</a>
+                <span id="homelink"></span>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,13 +78,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="list-group grid">
+                    <div id="link-content" class="list-group grid">
                         <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
                             <span class="fa fa-heartbeat"></span>Biology 
                         </a>
-                        <a href="next_grid.html" class="list-group-item">
-                            <span class="fa fa-desktop"></span>Computer 
-                        </a>
+
                         <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">
                             <span class="fa fa-cogs"></span>Physics 
                         </a>
@@ -168,6 +166,15 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    <script src="js/mturk.js"></script>
+
+    <script type="text/javascript">
+
+        var linkDiv = document.getElementById("link-content");
+        
+        // DISPLAY THE LINK
+        linkDiv.innerHTML = linkDiv.innerHTML+"<a href='next_grid.html"+ surveylink +"' class='list-group-item'><span class='fa fa-desktop'></span>Computer </a>";
+    </script>
         <script src="js/jquery.fittext.js"></script>
     <script type="text/javascript">
         $("a.list-group-item").fitText(0.7, { minFontSize: '14px', maxFontSize: '40px' });

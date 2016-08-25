@@ -45,9 +45,9 @@
 
 var ran = Math.floor((Math.random() * 10) + 1);
 if (ran < 5){
-    document.getElementById("menu-content").innerHTML='<a href="index_grid.html" class="list-group-item" >Grid <img src="img/grid.png" class="img_view" alt="Grid"></a> <a href="index_list.html" class="list-group-item" >List <img src="img/list.png" class="img_view" alt="List"> </a>'; 
+    document.getElementById("menu-content").innerHTML='<a href="index_grid.html'+ surveylink +'" class="list-group-item" >Grid <img src="img/grid.png" class="img_view" alt="Grid"></a> <a href="index_list.html'+ surveylink +'" class="list-group-item" >List <img src="img/list.png" class="img_view" alt="List"> </a>'; 
 }else{
- document.getElementById("menu-content").innerHTML='<a href="index_list.html" class="list-group-item" >List <img src="img/list.png" class="img_view" alt="List"> </a> <a href="index_grid.html" class="list-group-item" >Grid <img src="img/grid.png" class="img_view" alt="Grid"></a> '; 
+ document.getElementById("menu-content").innerHTML='<a href="index_list.html'+ surveylink +'" class="list-group-item" >List <img src="img/list.png" class="img_view" alt="List"> </a> <a href="index_grid.html'+ surveylink +'" class="list-group-item" >Grid <img src="img/grid.png" class="img_view" alt="Grid"></a> '; 
 
 }
 
